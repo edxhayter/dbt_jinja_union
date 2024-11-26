@@ -21,7 +21,7 @@ The other use case for JINJA is custom SQL statements - this is the use case we 
 ![Sales 2023](https://github.com/edxhayter/dbt_jinja_union/blob/edxhayter-patch-1/assets/2023_table_preview.png)
 ![Sales 2024](https://github.com/edxhayter/dbt_jinja_union/blob/edxhayter-patch-1/assets/2024_table_preview.png)
 
-For the purpose of the demonstration I have kept the actual data in the tables very simple (1 line with same data in it repeated across columns so we can cloearly see the union occur successfully). I have opted for dbt seeds here just so that the data can be generated quickly from within the project. All that is required after setting up the project is to run the `dbt seed` command.
+For the purpose of the demonstration I have kept the actual data in the tables very simple (1 line with same data in it repeated across columns so we can clearly see the union occur successfully). I have opted for dbt seeds here just so that the data can be generated quickly from within the project. All that is required after setting up the project is to run the `dbt seed` command.
 
 ### Model
 
