@@ -4,9 +4,9 @@
 
 ### Intro
 
-This repo is designed to demonstrate how dbt using JINJA can simplify SQL code and make develipers lives easier. A common occurence in data prep is to consolidate data of the same structure from different files or sources into a consolidated table. Unions, stacking data on top of each other is the means of achieving this consolidated outcome. In software like Tableau Prep and Alteryx, functionality is offered for wild-card unions that union same-structured tables quickly with a few button clicks. In languages such as Python this functionality can be replicated with a loop. In SQL, a union is constructed with a keyword (UNION ALL or UNION DISTINCT) between queries that produce an output of matching schema.
+This repo is designed to demonstrate how dbt using JINJA can simplify SQL code and make developers lives easier. A common occurence in data prep is to consolidate data of the same structure from different files or sources into a consolidated table. Unions, stacking data on top of each other is the means of achieving this consolidated outcome. In software like Tableau Prep and Alteryx, functionality is offered for wild-card unions that union same-structured tables quickly with a few button clicks. In languages such as Python this functionality can be replicated with a loop. In SQL, a union is constructed with a keyword (UNION ALL or UNION DISTINCT) between queries that produce an output of matching schema.
 
-UNION DISTINCT will deduplicate the output whereas UNION ALL as the name implies will return all rows regardless of duplication.
+    UNION DISTINCT will deduplicate the output whereas UNION ALL as the name implies will return all rows regardless of duplication.
 
 The gripe with a setup like this is if you have multiple data sources to consolidate, whether it be a table for each country, a table for each year or month of data, the task of manually listing out all the sources one after another seperated by a UNION keyword is tedious and not very easily updated to new data. If you have a new year of data you would need to add to the query with a new SELECT statement from the new year of data.
 
